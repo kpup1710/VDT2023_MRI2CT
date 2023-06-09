@@ -156,12 +156,12 @@ class MRI2CTDataset(Dataset):
                     sr_img_bytes = txn.get(
                         'MRI'.encode('utf-8')
                     )
-                img_HR = Image.open(BytesIO(hr_img_bytes)).convert("RGB")
-                img_SR = Image.open(BytesIO(sr_img_bytes)).convert("RGB")
+                img_HR = Image.open(BytesIO(hr_img_bytes)).convert("L")
+                img_SR = Image.open(BytesIO(sr_img_bytes)).convert("L")
 
         else:
-            img_HR = Image.open(self.hr_path[index]).convert("RGB")
-            img_SR = Image.open(self.sr_path[index]).convert("RGB")
+            img_HR = Image.open(self.hr_path[index]).convert("L")
+            img_SR = Image.open(self.sr_path[index]).convert("L")
 
             [img_SR, img_HR] = Util.transform_augment(
                 [img_SR, img_HR], split=self.split, min_max=(-1, 1))
