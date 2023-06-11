@@ -27,4 +27,4 @@ Some qualitative results
 ![1686498908832](image/README/1686498908832.png)
 
 # Acknoledgement 
-Lastly, I want to thank [janspiry](https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement) for such a wonderful and quality repository. I learn a lot from his/her repo design.
+Lastly, I want to thank [janspiry](https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement) for such a wonderful and quality repository. I learned a lot from his/her repo design.
